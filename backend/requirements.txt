@@ -1,0 +1,26 @@
+# Web Framework & Server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+python-multipart>=0.0.6
+
+# Validation & Settings
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# Database & Storage
+sqlalchemy>=2.0.0
+aiosqlite>=0.19.0
+
+# Desktop Automation & Media
+pyautogui>=0.9.54
+qrcode>=7.4.0
+Pillow>=10.0.0,<11.0.0
+
+# HTTP Client & Testing
+httpx>=0.25.0
+
+# Optional / Legacy Compatibility
+python-socketio>=5.9.0
+python-engineio>=4.5.0
