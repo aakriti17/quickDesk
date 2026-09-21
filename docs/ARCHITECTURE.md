@@ -38,7 +38,7 @@ flowchart TB
     WS_Host <-->|"5. SDP Offer/Answer & ICE"| WS_Remote
 
     %% WebRTC Peer-to-Peer
-    HostBrowser ==="6. P2P WebRTC Video Stream (Screen Capture)"===> RemoteBrowser
+    HostBrowser ==>|"6. P2P WebRTC Video Stream (Screen Capture)"| RemoteBrowser
 
     %% Control feedback loop
     TouchControls -->|"7. remote_input (coords, clicks)"| WS_Remote
@@ -123,7 +123,7 @@ sequenceDiagram
 
     rect rgb(230, 255, 230)
         note over HB,RB: Direct Peer-to-Peer Stream & Control
-        HB==>>RB: Direct WebRTC Video Stream (Screen MediaStream)
+        HB->>RB: Direct WebRTC Video Stream (Screen MediaStream)
         Remote->>RB: Touch trackpad / Click / Keystroke
         RB->>SVR: WS: remote_input (type, coordinates, key)
         SVR->>SVR: Validate session permissions

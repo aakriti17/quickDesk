@@ -63,7 +63,7 @@ flowchart LR
     R_UI -->|"2. Scan QR / Connect"| H_SRV
     H_UI <-->|"3. WebSocket Signaling"| H_SRV
     R_UI <-->|"4. WebSocket Signaling"| H_SRV
-    H_UI ==="5. P2P WebRTC Video Stream (Screen)"===> R_UI
+    H_UI ==>|"5. P2P WebRTC Video Stream (Screen)"| R_UI
     R_UI -->|"6. Touch / Mouse / Key Inputs"| H_SRV
     H_SRV -->|"7. Native OS Events"| H_AUTO
 ```
